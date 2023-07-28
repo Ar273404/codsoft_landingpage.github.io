@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="star.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+    <div class="section">
+        <div class="circle"></div>
+        <div class="header">
+            <a href="#" class="logo"><img src="image/logo.png"></a>
+            <div class="toggle active" id="menu-icon" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="star.html"><i class='bx bxs-home' ></i>Home</a></li>
+                <li><a href=""><i class='bx bxs-shopping-bag' ></i>Shop</a></li>
+                <li><a href="#">delivery</a></li>
+                <li><a href="#"><i class='bx bxs-contact' ></i>Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just coffee<br>It's<span>Starbucks</span></h2>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsam cum laborum sed molestiae ex aperiam assumenda impedit iure, praesentium minus culpa veniam libero pariatur </p>
+                 <a href="#" class="butt">Learn more</a>
+            </div>
+            <div class="imgBox">
+                <img src="image/img1.png" class="Starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+           <li><img src="image/thumb1.png"  onclick= "imgSlider('image/img1.png') ;colorChange('#017143')"></li>
+           <li><img src="image/thumb2.png"  onclick="imgSlider('image/img2.png') ;colorChange('#eb7495')"></li>
+           <li><img src="image/thumb3.png"  onclick="imgSlider('image/img3.png') ;colorChange('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+              <li><a href="#"><img src="image/facebook.png"></a></li>
+              <li><a href="#"><img src="image/instagram.png"></a></li>
+              <li><a href="#"><img src="image/twitter.png"></a></li>
+        </ul>
+    </div>
+    <script>
+        function imgSlider(anything){
+            const slider=document.querySelector('.Starbucks');
+            slider.src=anything;
+        }
+        function colorChange(color){
+            const col=document.querySelector('.circle');
+            col.style.background=color;
+        }
+        
+    </script>
+        <section>
+         <div class="line"></div>
+      <div class="heading">
+        <span>Shop Now</span>
+        <h1>Shop coffee</h1>
+      </div>
+      <div class="shop-container">
+        <div class="box">
+            <div class="box-img">
+            <img src="image/thumb1.png">
+           </div>
+           <div class="star">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star-half-o" aria-hidden="true"></i>
+           </div>
+           <h2>Starbucks Coffee</h2>
+           <span>$10</span>
+           <a href="#" class="btn">order now</a>
+           </div>
+      <div class="box">
+        <div class="box-img">
+        <img src="image/thumb2.png">
+    </div>
+    <div class="star">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+    </div>
+    <h2>Starbucks Coffee</h2>
+    <span>$6</span>
+     <a href="#" class="btn">order now</a>
+  </div>
+  <div class="box">
+    <div class="box-img">
+    <img src="image/thumb3.png">
+   </div>
+   <div class="star">
+       <i class="fa fa-star" aria-hidden="true"></i>
+       <i class="fa fa-star" aria-hidden="true"></i>
+       <i class="fa fa-star" aria-hidden="true"></i>
+       <i class="fa fa-star" aria-hidden="true"></i>
+       <i class="fa fa-star-half-o" aria-hidden="true"></i>
+   </div>
+   <h2>Starbucks Coffee</h2>
+   <span>$9.4</span>
+   <a href="#" class="btn">order now</a>
+   </div>
+</section>
+<section>
+    <div class="tocontainer">
+        <h1 class="heading">Browse All Topics <i class="fas fa-hand-pointer fa-rotate-90"></i></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fa-solid fa-award"></i>
+                <h1 class="head">Starbucks Reward</h1>
+                <a href="#" class="button">open</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-layer-group"></i>
+                <h1 class="head">Starbucks Cards</h1>
+                <a href="#" class="button">open</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-mobile"></i>
+                <h1 class="head">Mobile</h1>
+                <a href="#" class="button">click</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-store"></i>
+                <h1 class="head">Our Stores</h1>
+                <a href="#" class="button">open</a>
+            </div>
+            <div class="box">
+                <i class="fa-sharp fa-solid fa-circle-info"></i>
+                <h1 class="head">Company info</h1>
+                <a href="#" class="button">open</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-house"></i>
+                <h1 class="head">Coffee at Home</h1>
+                <a href="#" class="button">open</a>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="footer" id="footer">
+    <div class="social">
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-spotify' ></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="#"><i class='bx bxl-google' ></i></a>
+        <a href="#"><i class='bx bxl-pinterest' ></i></a>
+    </div>
+    <div class="links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms Of Use</a>
+        <a href="#">CA Supply Chain Act</a>
+    </div>
+    <div class="last">
+        <p>@ 2022 Starbucks Coffe Company. All right reserved.</p>
+    </div>
+ </section>
+</div>
+</body>
+</html>
